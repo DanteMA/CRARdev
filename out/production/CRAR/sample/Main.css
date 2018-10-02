@@ -1,0 +1,22 @@
+.button {
+    -fx-background-color: linear-gradient(lightgreen, lawngreen);
+    -fx-background-radius: 50px;
+    -fx-background-insets: 0;
+
+    -fx-border-color: black;
+    -fx-border-radius: 12px;
+    -fx-border-width: 2px;
+}
+
+.button:hover {
+    -fx-background-color: linear-gradient(greenyellow, green);
+
+}
+
+#extract {
+    -fx-background-color: lightcoral;
+}
+
+#extract:hover {
+    -fx-background-color: linear-gradient(red, orange);
+}

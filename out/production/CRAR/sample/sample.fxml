@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<GridPane gridLinesVisible="false"
+        fx:controller = "sample.Controller"
+        xmlns:fx = "http://javafx.com/fxml"
+        alignment = "center">
+    <HBox GridPane.columnIndex="0" GridPane.rowIndex="0">
+        <Button text="Choose file(s): "
+                onAction = "#searchFile"/>
+    </HBox>
+    <TextField promptText="Insert file path..." fx:id = "input_location"
+            GridPane.columnIndex= "1" GridPane.rowIndex = "0" >
+    </TextField>
+
+    <HBox GridPane.columnIndex = "0" GridPane.rowIndex = "1">
+        <Button text = "Extract to: "
+                onAction = "#searchDir"/>
+    </HBox>
+
+    <TextField promptText = "Insert folder path..." fx:id = "output_location"
+          GridPane.columnIndex = "1" GridPane.rowIndex = "1">
+    </TextField>
+
+    <HBox GridPane.columnIndex= "1" GridPane.rowIndex = "3"
+            alignment="CENTER_RIGHT">
+        <Button text = "Extract" fx:id = "extract"
+                onAction="#compress"/>
+    </HBox>
+</GridPane>
