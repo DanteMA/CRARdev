@@ -8,6 +8,10 @@
     -fx-border-width: 2px;
 }
 
+.text-field {
+    -fx-padding: 15px;
+}
+
 .button:hover {
     -fx-background-color: linear-gradient(greenyellow, green);
 

@@ -7,17 +7,19 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
-<GridPane gridLinesVisible="false"
+<GridPane gridLinesVisible="true" fx:id="main_grid"
         fx:controller = "sample.Controller"
         xmlns:fx = "http://javafx.com/fxml"
         alignment = "center">
-    <HBox GridPane.columnIndex="0" GridPane.rowIndex="0">
+
+    <HBox GridPane.columnIndex="0" GridPane.rowIndex="0" fx:id = "input_files">
         <Button text="Choose file(s): "
                 onAction = "#searchFile"/>
     </HBox>
-    <TextField promptText="Insert file path..." fx:id = "input_location"
+
+    <ListView placeholder = "Insert file(s) path..."
             GridPane.columnIndex= "1" GridPane.rowIndex = "0" >
-    </TextField>
+    </ListView>
 
     <HBox GridPane.columnIndex = "0" GridPane.rowIndex = "1">
         <Button text = "Extract to: "
